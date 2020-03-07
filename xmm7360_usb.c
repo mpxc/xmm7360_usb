@@ -107,7 +107,7 @@ static int pci_probe(struct pci_dev *dev, const struct pci_device_id *id) {
 }
 
 static void pci_remove(struct pci_dev *dev) {
-    mmx7360_set_usb_mode(dev, false);
+    mmx7360_set_usb_mode(dev, true);
 }
 
 static struct pci_driver pci_driver = {
